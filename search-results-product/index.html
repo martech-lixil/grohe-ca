@@ -1,0 +1,13 @@
+<!doctype html>
+<meta charset="utf-8">
+<script>
+  // Preserve query string (& hash) when redirecting to the .html file
+  var target = './search-results-product.html' + window.location.search + window.location.hash;
+  window.location.replace(target);
+</script>
+<noscript>
+  <!-- Fallback without JS (won't keep query params) -->
+  <meta http-equiv="refresh" content="0; url=./search-results-product.html">
+  <link rel="canonical" href="./search-results-product.html">
+  <a href="./search-results-product.html">Continue</a>
+</noscript>
